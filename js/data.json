@@ -1,0 +1,188 @@
+var studio ={
+	"packages":[
+		{
+				"package":{
+					"title":"Package 1",
+					"restrictions":"Package available to anyone wishing to book the studio.",
+					"tariff":"£15 per hour",
+					"availability":"Monday - Friday",
+					"four":"4 hour session - £60",
+					"eight":"8 hour session - £100",
+					"ten":"10 hour session - £120",
+					"fifteen":"15hour session - £175",
+					"twenty-four":"24hour lock-in session - £300"
+				},
+				"package":{
+					"title":"VIP Package",
+					"restrictions":"Package available to anyone who has a 1st base entertainment or Mak media account.",
+					"tariff":"£10 per hour",
+					"availability":"Monday - Friday",
+					"four":"4 hour session - £40",
+					"eight":"8 hour session - £80",
+					"ten":"10 hour session - £100",
+					"fifteen":"15hour session - £150",
+					"twenty-four":"24hour lock-in session - £240"
+				},
+				"package":{
+					"title":"Student Package",
+					"restrictions":"Package available to anyone who is in full time education and can provide school references and contacts",
+					"tariff":"£12 per hour",
+					"availability":"Monday - Friday",
+					"four":"4 hour session - £48",
+					"eight":"8 hour session - £80",
+					"ten":"10 hour session - £120",
+					"fifteen":"15hour session - £180",
+					"twenty-four":"24hour lock-in session - £260"
+				},
+				"package":{
+					"title":"Concessions Package",
+					"restrictions":"Package available to anyone who is in full time education and can provide school references and contacts",
+					"tariff":"£12 per hour",
+					"availability":"Monday - Friday",
+					"four":"4 hour session - £48",
+					"eight":"8 hour session - £80",
+					"ten":"10 hour session - £120",
+					"fifteen":"15hour session - £180",
+					"twenty-four":"24hour lock-in session - £260"
+				},
+				"notes":"Engineer provided on request at extra cost, Engineer costs vary depending on individual engineers, length of session and work required, please see engineers section."
+		}
+	],
+
+	"engineers":[
+		{
+			"engineer":
+			{
+				"name":"Nick Chikore",
+				"image":"nickchikore.jpg",
+				"classification":"1",
+				"tariff":{
+					"standard":"£10 per hour",
+					"controlRoom4":"£30 - 4 hours",
+					"controlRoom8":"£60 - 8 hours",
+					"controlRoom12":"£100 - 12 hours",
+					"track_mix":"£120 per standard track, £80 per track recorded with by 1st base entertainment"
+				},
+				"showcase":{
+					"project":{
+						"artist":"Kimani",
+						"sample":"you got it",
+						"role":"console, enviroment set up, mixing",
+						"tools":"AKG414XL microphone, Logic Pro X, Avalon, Trackmasters 64Channel mixing console, Waves plugins "
+					},
+					"project":{
+						"artist":"Zimkid",
+						"sample":"Mabasa ako",
+						"role":" environment checks and setup, track mixing",
+						"tools":"AKG414XL microphone, Logic Pro X, Focusrite sapphire, Waves plugins "
+					}
+				},
+				"genre":"rnb, soul, hiphop, indie"
+			},
+			"engineer":
+			{
+				"name":"Luke Masih",
+				"image":"lukemasih.jpg",
+				"classification":"1",
+				"tariff":{
+					"standard":"£10 per hour",
+					"controlRoom4":"£30 - 4 hours",
+					"controlRoom8":"£60 - 8 hours",
+					"controlRoom12":"£100 - 12 hours",
+					"track_mix":"£120 per standard track, £80 per track recorded with by 1st base entertainment"
+				},
+				"showcase":{
+					"project":{
+						"artist":"Kimani",
+						"sample":"sex",
+						"role":"console, vocal recording, enviroment set up",
+						"tools":"AKG414XL microphone, Logic Pro X, Avalon, Trackmasters 64Channel mixing console "
+					}
+				},
+				"genre":"rnb, soul, hiphop, indie"
+
+			},
+			"notes":"Any tracks created externally and submitted for mixing will be evaluated before a price is assigned, price fluctuations are due to standard of audio submitted, and size of project. Please be  advised that a standard full project is considered up to 24 tracks for digital sessions and 32 tracks for a live session"
+		}
+	],
+	"gallery":[
+		{
+			"images":{
+				"img":{
+					"thumbnail":"",
+					"image":"",
+					"caption":""
+				},
+				"img":{
+					"thumbnail":"",
+					"image":"",
+					"caption":""
+				},
+				"img":{
+					"thumbnail":"",
+					"image":"",
+					"caption":""
+				},
+				"img":{
+					"thumbnail":"",
+					"image":"",
+					"caption":""
+				},
+				"img":{
+					"thumbnail":"",
+					"image":"",
+					"caption":""
+				},
+				"img":{
+					"thumbnail":"",
+					"image":"",
+					"caption":""
+				},
+				"img":{
+					"thumbnail":"",
+					"image":"",
+					"caption":""
+				},
+				"img":{
+					"thumbnail":"",
+					"image":"",
+					"caption":""
+				}
+			},
+			"videos":{
+				"video":{
+					"thumbnail":"",
+					"image":"",
+					"caption":""
+				},
+				"video":{
+					"thumbnail":"",
+					"image":"",
+					"caption":""
+				},
+				"video":{
+					"thumbnail":"",
+					"image":"",
+					"caption":""
+				},
+				"video":{
+					"thumbnail":"",
+					"image":"",
+					"caption":""
+				},
+				"video":{
+					"thumbnail":"",
+					"image":"",
+					"caption":""
+				},
+				"video":{
+					"thumbnail":"",
+					"image":"",
+					"caption":""
+				}
+			},
+		}
+	]
+
+
+}
