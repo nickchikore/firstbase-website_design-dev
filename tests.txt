@@ -1,0 +1,153 @@
+<label for="modal-1" class="gallery_thumb">
+  <div class="modal-trigger"><img src="../images/gallery/thumbs/{{thumbnail}}" alt="{{caption}}"></div>
+</label>
+<input class="modal-state" id="modal-1" type="checkbox" />
+<div class="modal-fade-screen">
+  <div class="modal-inner">
+    <div class="modal-close" for="modal-1"></div>
+    <p class="modal-content gallery_image">
+        <img src="../images/gallery/hi-res/{{image}}" alt="{{caption}}">
+    </p>
+  </div>
+</div>
+</div>
+
+
+/*modal*/
+
+section.refill {
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    position: relative;
+}
+.refills-wrapper {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+.line-behind-text {
+    border-bottom: 1px solid #cacaca;
+    margin-bottom: 4.5em;
+    text-align: center;
+}
+.refill-centering > * {
+    display: inline-block;
+}
+.refills-components .modal label {
+    cursor: pointer;
+    margin-bottom: 0;
+    text-align: left;
+}
+.refills-components .modal .modal-state {
+    display: none;
+}
+.refill-centering > * > * {
+    text-align: left;
+}
+.refills-components .modal .modal-state:checked + .modal-fade-screen {
+    opacity: 1;
+    visibility: visible;
+}
+.refills-components .modal .modal-fade-screen {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    padding-top: 0.6em;
+    text-align: left;
+    -webkit-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+    visibility: hidden;
+    z-index: 99999999999;
+}
+.refills-components .modal .modal-state:checked + .modal-fade-screen .modal-inner {
+    top: 0.5em;
+}
+@media screen and (min-width: 40em){
+  .refills-components .modal .modal-inner {
+      max-height: 70%;
+      padding: 3em;
+      width: 60%;
+  }
+}
+.refills-components .modal .modal-inner {
+    background: #fff;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 0;
+    max-height: 95%;
+    overflow: auto;
+    padding: 1.5em;
+    position: relative;
+    -webkit-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+    width: 95%;
+}
+.refills-components .modal .modal-close {
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    height: 1.5em;
+    width: 1.5em;
+    background: #fff;
+    cursor: pointer;
+}
+.refills-components .modal .modal-close::before {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.refills-components .modal .modal-close::after, .refills-components .modal .modal-close::before {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 0;
+    left: 50%;
+    height: 1.5em;
+    width: 0.15em;
+    background: #ddd;
+    content: "";
+    display: block;
+    margin: -3px 0 0 -1px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.refills-components .modal .modal-close::after, .refills-components .modal .modal-close::before {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 0;
+    left: 50%;
+    height: 1.5em;
+    width: 0.15em;
+    background: #ddd;
+    content: "";
+    display: block;
+    margin: -3px 0 0 -1px;
+    -webkit-transform: rotate(45deg);
+    
+    transform: rotate(45deg);
+}
+
+
+$(function() {
+  $("#modal-1").on("change", function() {
+    if ($(this).is(":checked")) {
+      $("body").addClass("modal-open");
+    } else {
+      $("body").removeClass("modal-open");
+    }
+  });
+
+  $(".modal-fade-screen, .modal-close").on("click", function() {
+    $(".modal-state:checked").prop("checked", false).change();
+  });
+
+  $(".modal-inner").on("click", function(e) {
+    e.stopPropagation();
+  });
+});

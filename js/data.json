@@ -1,60 +1,113 @@
 var studio ={
+	"navigation":[
+		{
+			"url":"../home/index.html#featured",
+			"label":"Home",
+			"ref":"homepage"
+		},
+		{
+			"url":"../home/index.html#about",
+			"label":"About",
+			"ref":"about"
+		},
+		{
+			"url":"../home/index.html#services",
+			"label":"Services",
+			"ref":"services"
+		},
+		{
+			"url":"../home/index.html#staff",
+			"label":"Staff",
+			"ref":"staff"
+		},
+		{
+			"url":"../home/index.html#projects",
+			"label":"Projects",
+			"ref":"projects"
+		},
+		{
+			"url":"../studio/index.html",
+			"label":"Studio",
+			"ref":"studio"
+		}
+/*		{
+			"url":"../gallery/index.html",
+			"label":"Gallery",
+			"ref":"gallery"
+		},
+		{
+			"url":"../shop/index.html",
+			"label":"Store",
+			"ref":"store"
+		},
+		{
+			"url":"../blog/index.html",
+			"label":"Blog",
+			"ref":"blog"
+		},*/
+
+	],
 	"packages":[
 		{
-				"package":{
-					"title":"Package 1",
-					"restrictions":"Package available to anyone wishing to book the studio.",
-					"tariff":"£15 per hour",
-					"availability":"Monday - Friday",
-					"four":"4 hour session - £60",
-					"eight":"8 hour session - £100",
-					"ten":"10 hour session - £120",
-					"fifteen":"15hour session - £175",
-					"twenty-four":"24hour lock-in session - £300"
-				},
-				"package":{
-					"title":"VIP Package",
-					"restrictions":"Package available to anyone who has a 1st base entertainment or Mak media account.",
-					"tariff":"£10 per hour",
-					"availability":"Monday - Friday",
-					"four":"4 hour session - £40",
-					"eight":"8 hour session - £80",
-					"ten":"10 hour session - £100",
-					"fifteen":"15hour session - £150",
-					"twenty-four":"24hour lock-in session - £240"
-				},
-				"package":{
-					"title":"Student Package",
-					"restrictions":"Package available to anyone who is in full time education and can provide school references and contacts",
-					"tariff":"£12 per hour",
-					"availability":"Monday - Friday",
-					"four":"4 hour session - £48",
-					"eight":"8 hour session - £80",
-					"ten":"10 hour session - £120",
-					"fifteen":"15hour session - £180",
-					"twenty-four":"24hour lock-in session - £260"
-				},
-				"package":{
-					"title":"Concessions Package",
-					"restrictions":"Package available to anyone who is in full time education and can provide school references and contacts",
-					"tariff":"£12 per hour",
-					"availability":"Monday - Friday",
-					"four":"4 hour session - £48",
-					"eight":"8 hour session - £80",
-					"ten":"10 hour session - £120",
-					"fifteen":"15hour session - £180",
-					"twenty-four":"24hour lock-in session - £260"
-				},
-				"notes":"Engineer provided on request at extra cost, Engineer costs vary depending on individual engineers, length of session and work required, please see engineers section."
-		}
-	],
-
-	"engineers":[
+			"title":"Standard Package ",
+			"ref":"standard",
+			"restrictions":"Standard package available to all clients booking the studio with no addons. Check availability",
+			"tariff":"£12 per hour",
+			"img":"pkg1.png",
+			"availability":"Monday - Friday",
+			"four":"4 hour session - £60",
+			"eight":"8 hour session - £100",
+			"ten":"10 hour session - £120",
+			"fifteen":"15hour session - £175",
+			"twenty-four":"24hour lock-in session - £300",
+			"notes":"Engineer provided on request at extra cost, Engineer costs vary depending on individual engineers, length of session and work required, please see engineers section."
+		},
 		{
-			"engineer":
+			"title":"VIP Package",
+			"ref":"vip",
+			"restrictions":"Package available to 1st Base Entertainment or Mak Media VIP subscrbers, client account must be active",
+			"tariff":"£10 per hour",
+			"img":"pkg2.png",
+			"four":"4 hour session - £40",
+			"eight":"8 hour session - £80",
+			"ten":"10 hour session - £100",
+			"fifteen":"15hour session - £150",
+			"twenty-four":"24hour lock-in session - £240",
+			"notes":"Engineer provided on request at extra cost, Engineer costs vary depending on individual engineers, length of session and work required, please see engineers section."
+		},
+		{
+			"title":"Student Package",
+			"ref":"students",
+			"restrictions":"Package available to anyone who is in full time education and can provide school references and contacts",
+			"tariff":"£12 per hour",
+			"img":"pkg3.png",
+			"availability":"Monday - Friday",
+			"four":"4 hour session - £48",
+			"eight":"8 hour session - £80",
+			"ten":"10 hour session - £120",
+			"fifteen":"15hour session - £180",
+			"twenty-four":"24hour lock-in session - £260",
+			"notes":"Engineer provided on request at extra cost, Engineer costs vary depending on individual engineers, length of session and work required, please see engineers section."
+		},
+		{
+					"title":"Concessions Package",
+					"ref":"concession",
+					"restrictions":"Package available to anyone who is in full time education and can provide school references and contacts",
+					"tariff":"£12 per hour",
+					"img":"pkg4.png",
+					"availability":"Monday - Friday",
+					"four":"4 hour session - £48",
+					"eight":"8 hour session - £80",
+					"ten":"10 hour session - £120",
+					"fifteen":"15hour session - £180",
+					"twenty-four":"24hour lock-in session - £260",
+					"notes":"Engineer provided on request at extra cost, Engineer costs vary depending on individual engineers, length of session and work required, please see engineers section."
+		},
+	],
+	"engineers":[
 			{
 				"name":"Nick Chikore",
-				"image":"nickchikore.jpg",
+				"image":"nick.jpg",
 				"classification":"1",
 				"tariff":{
 					"standard":"£10 per hour",
@@ -77,12 +130,12 @@ var studio ={
 						"tools":"AKG414XL microphone, Logic Pro X, Focusrite sapphire, Waves plugins "
 					}
 				},
-				"genre":"rnb, soul, hiphop, indie"
+				"genre":"rnb, soul, hiphop, indie",
+				"notes":"Any tracks created externally and submitted for mixing will be evaluated before a price is assigned, price fluctuations are due to standard of audio submitted, and size of project. Please be  advised that a standard full project is considered up to 24 tracks for digital sessions and 32 tracks for a live session"
 			},
-			"engineer":
 			{
 				"name":"Luke Masih",
-				"image":"lukemasih.jpg",
+				"image":"luke.jpg",
 				"classification":"1",
 				"tariff":{
 					"standard":"£10 per hour",
@@ -99,88 +152,65 @@ var studio ={
 						"tools":"AKG414XL microphone, Logic Pro X, Avalon, Trackmasters 64Channel mixing console "
 					}
 				},
-				"genre":"rnb, soul, hiphop, indie"
-
+				"genre":"rnb, soul, hiphop, indie",
+				"notes":"Any tracks created externally and submitted for mixing will be evaluated before a price is assigned, price fluctuations are due to standard of audio submitted, and size of project. Please be  advised that a standard full project is considered up to 24 tracks for digital sessions and 32 tracks for a live session"
 			},
-			"notes":"Any tracks created externally and submitted for mixing will be evaluated before a price is assigned, price fluctuations are due to standard of audio submitted, and size of project. Please be  advised that a standard full project is considered up to 24 tracks for digital sessions and 32 tracks for a live session"
+
+
+	],
+	"gallery_pics":[
+		{
+			"thumbnail":"production1_thumb.png",
+			"image":"production1.jpg",
+			"caption":""
+		},
+		{
+			"thumbnail":"production2_thumb.png",
+			"image":"production2.jpg",
+			"caption":""
+		},
+		{
+			"thumbnail":"production3_thumb.png",
+			"image":"production3.jpg",
+			"caption":""
+		},
+		{
+			"thumbnail":"production4_thumb.png",
+			"image":"production4.jpg",
+			"caption":""
+		},
+		{
+			"thumbnail":"production5_thumb.png",
+			"image":"production5.jpg",
+			"caption":""
+		},
+		{
+			"thumbnail":"production6_thumb.png",
+			"image":"production6.jpg",
+			"caption":""
 		}
 	],
-	"gallery":[
+
+	"terms":[
 		{
-			"images":{
-				"img":{
-					"thumbnail":"",
-					"image":"",
-					"caption":""
-				},
-				"img":{
-					"thumbnail":"",
-					"image":"",
-					"caption":""
-				},
-				"img":{
-					"thumbnail":"",
-					"image":"",
-					"caption":""
-				},
-				"img":{
-					"thumbnail":"",
-					"image":"",
-					"caption":""
-				},
-				"img":{
-					"thumbnail":"",
-					"image":"",
-					"caption":""
-				},
-				"img":{
-					"thumbnail":"",
-					"image":"",
-					"caption":""
-				},
-				"img":{
-					"thumbnail":"",
-					"image":"",
-					"caption":""
-				},
-				"img":{
-					"thumbnail":"",
-					"image":"",
-					"caption":""
-				}
-			},
-			"videos":{
-				"video":{
-					"thumbnail":"",
-					"image":"",
-					"caption":""
-				},
-				"video":{
-					"thumbnail":"",
-					"image":"",
-					"caption":""
-				},
-				"video":{
-					"thumbnail":"",
-					"image":"",
-					"caption":""
-				},
-				"video":{
-					"thumbnail":"",
-					"image":"",
-					"caption":""
-				},
-				"video":{
-					"thumbnail":"",
-					"image":"",
-					"caption":""
-				},
-				"video":{
-					"thumbnail":"",
-					"image":"",
-					"caption":""
-				}
-			},
+			"sectionHead":"Studio hire and Packages",
+			"appendix":"1",
+			"content":"Engineer provided on request at extra cost, Engineer costs vary depending on individual engineers, length of session and work required, please see engineers section."
+		},
+		{
+			"sectionHead":"Engineers",
+			"appendix":"2",
+			"content":"Any tracks created externally and submitted for mixing will be evaluated before a price is assigned, price fluctuations are due to standard of audio submitted, and size of project. Please be advised that a standard full project is considered up to 24 tracks for digital sessions and 32 tracks for a live session"
+		},
+		{
+			"sectionHead":"Bookings and reservations",
+			"appendix":"1",
+			"content":"Studio bookings must be made with at list 96hours prior to the session. A confirmation via email will be sent and this will be used as a reciept of payment for the session."
+		},
+		{
+			"sectionHead":"Refunds ",
+			"appendix":"1",
+			"content":"Any cancellations to sessions must be made at least 24hours prior to the studio sessions otherwise they will incur an admin fee of £20 , which is the norminal booking holding fee for all sessions to lock in bookings for studio or engineering time. Refunds will be made in the form of a bank transfer into the account which made the initial transaction. "
 		}
 	]
 

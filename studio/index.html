@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Studio - 1st Base Entertainment</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="icon" sizes="16x16" type="image/x-icon" href="../images/favicon/1stBase32.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-77130108-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../home/"><h1>1st Base<span class="subhead">Entertainment</span></h1></a>
+          </div><!-- navbar-header -->
+          <div class="collapse navbar-collapse" id="collapse">
+
+          </div><!-- collapse navbar-collapse -->
+        </div><!-- container -->
+      </nav>
+    </header>
+    <div class="">
+      <div id="js-parallax-window" class="parallax-window">
+        <div class="parallax-static-content">
+          <div class="">
+            <h1>1st Class all the way.</h1>
+            <p>Come and check out our studio , just book a tester session</p>
+<!--            <button type="button" name="button">Book a tour</button>
+-->          </div>
+
+        </div>
+        <div id="js-parallax-background" class="parallax-background"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid page">
+
+        <h2>What we get up to!</h2>
+        <div class="row" id="galleryPics">
+
+        </div>
+
+        <h2>Packages and studio hire</h2>
+        <div class="row" id="studioPackages">
+
+        </div>
+
+        <h2>Our engineers</h2>
+        <div class="row" id="engineersPackages">
+
+        </div>
+
+    </div>
+
+    <footer class="container-fluid">
+      <div class="content container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <p>Call us for studio bookings on <span class="phone">07747633005</span></p>
+          </div><!-- col-sm-6 -->
+          <div class="col-sm-6">
+            <nav class="navbar navbar-default" role="navigation">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="../terms/index.html">Terms of use</a></li>
+              </ul>
+            </nav>
+          </div><!-- col-sm-6 -->
+        </div><!-- row -->
+      </div><!-- content container -->
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/mustache.js" ></script>
+    <script src="../js/data.json"></script>
+    <script src="../js/myscript.js"></script>
+    <!-- this is the HTML template -->
+    <script type="text/html" id="packages">
+
+      <div class="row packages col-md-8 col-md-offset-2">
+        {{#packages}}
+        <div class="{{ref}} col-xs-12 col-sm-6 col-md-3 ">
+          <h3>{{title}}</h3>
+          <p><b>{{tariff}}</b></p>
+          <div class="rates">
+            <p>{{four}}</p>
+            <p>{{eight}}</p>
+            <p>{{ten}}</p>
+            <p>{{fifteen}}</p>
+            <p>{{twenty-four}}</p>
+          </div>
+          <div class="terms">
+            <p>{{restrictions}}</p>
+          </div>
+        </div>
+        {{/packages}}
+      </div>
+      <div class="container col-md-8 col-md-offset-2">
+        <p class="note"><sup>*</sup>Engineer provided on request at extra cost, Engineer costs vary depending on individual engineers, length of session and work required, please see engineers section.</p>
+      </div>
+      <div class="container col-md-8 col-md-offset-2">
+        <div class="booking">
+          <h2>Booking the studio is simple.</h2>
+            <p class="col-xs-12 col-sm-6 col-md-4">You can book the studio via <a href="mailto:enquiries@firstbaseentertainment.com"><i class="glyphicon glyphicon-envelope"></i>email</a> or giving us a <a tel="07747633005"><i class="glyphicon glyphicon-phone"></i>call now</a>.Booking way in advance increases the chance of getting your preferred slot as some premium times are always prebooked. We advise booking at least 2 weeks in advance for sessions requiring a sound engineer present, and a week advance booking for regular sessions. Please read the studio hire <a href="../terms/index.html">terms and conditions</a></p>
+            <p class="col-xs-12 col-sm-6 col-md-4">For general enquiries or complaints, you can also use our social media channels for prompt, public facing responses. For mixing, sound sculpting and mastering services ,please try to send an <a href="mailto:enquiries@firstbaseentertainment.com"><i class="glyphicon glyphicon-envelope"></i>email</a> detailing the project you need us to work on, please attach samples of your project where possible for more accurate quotes. Please note engineering and mixing services are seperate to studio hire</p>
+            <p class=" contact-links col-xs-12 col-sm-12 col-md-4">
+              <a href="https://www.facebook.com/1stBaseEnt/" target="_blank"><i class="social facebook"></i></a>
+	            <a href="https://twitter.com/1stBaseEnt" target="_blank"><i class="social twitter"></i></a>
+	            <a href="https://www.instagram.com/1stbaseent/" target="_blank"><i class="social instagram"></i></a>
+            </p>
+        </div>
+      </div>
+    </script>
+    <script type="text/html" id="engineers">
+      <div class="row engineer col-md-8 col-md-offset-2">
+        {{#engineers}}
+        <div class="col-xs-12 col-sm-6">
+          <div class="photo col-xs-12 col-sm-4 col-md-3">
+            <img class="img-circle" src="../images/placeholders/roster-assets/{{image}}" alt="{{name}}">
+          </div>
+          <div class="info col-xs-12 col-sm-8 col-md-9">
+            <h3>{{name}}</h3>
+            <p><b>Specialist genres:</b> <em>{{genre}}</em></p>
+            <ul>
+              <li>{{tariff.standard}}</li>
+              <li>{{tariff.controlRoom4}}</li>
+              <li>{{tariff.controlRoom8}}</li>
+              <li>{{tariff.controlRoom12}}</li>
+              <li>{{tariff.track_mix}}</li>
+            </ul>
+          </div>
+        </div>
+        {{/engineers}}
+      </div>
+      <div class="container col-md-8 col-md-offset-2">
+        <p class="note"><sup>**</sup>Any tracks created externally and submitted for mixing will be evaluated before a price is assigned, price fluctuations are due to standard of audio submitted, and size of project. Please be  advised that a standard full project is considered up to 24 tracks for digital sessions and 32 tracks for a live session</p>
+      </div>
+
+    </script>
+    <script type="text/html" id="gallery">
+      <div class="row col-md-8 col-md-offset-2">
+          {{#gallery_pics}}
+          <div class="col-xs-6 col-sm-2">
+            <div class="gallery_thumb">
+              <img src="../images/gallery/thumbs/{{thumbnail}}" alt="{{caption}}">
+            </div>
+            <div class="gallery_image">
+              <img src="../images/gallery/hi-res/{{image}}" alt="{{caption}}">
+            </div>
+          </div>
+          {{/gallery_pics}}
+
+
+
+
+
+
+
+      </div>
+    </script>
+    <script type="text/html" id="sitenav">
+         <ul class="nav navbar-nav navbar-right">
+          {{#navigation}}
+            <li class="{{ref}}">
+                <a href="{{url}}">{{label}}</a>
+            </li>
+          {{/navigation}}
+        </ul>
+    </script>
+
+  </body>
+</html>
