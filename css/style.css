@@ -16,11 +16,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.container.page h1 {
-    margin: 30px auto;
-}
-
-
 dt {
     text-transform: uppercase;
     margin: 12px auto;
@@ -262,6 +257,15 @@ header .inbody .navbar-brand span.subhead {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+.container.page h1 {
+    margin: 30px auto;
+}
+@media all and (max-width:768px) {
+  .page .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 /**  Page -- Mission **/
@@ -575,7 +579,7 @@ footer .navbar-nav>li a {
   /*Parallax*/
   @media all and (max-width:768px){
     .parallax-window {
-      max-height:30em;
+      max-height:40em;
     }
     .parallax-static-content {
       padding: 8em 0;
